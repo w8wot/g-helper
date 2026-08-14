@@ -942,9 +942,9 @@ public class AsusACPI
 
         setting[0] = (byte)0xb4;
         setting[1] = (byte)mode;
-        setting[2] = color.R;
-        setting[3] = color.G;
-        setting[4] = color.B;
+        setting[2] = color.G;
+        setting[3] = color.B;
+        setting[4] = color.R;
         setting[5] = (byte)speed;
 
         int result = DeviceSet(TUF_KB, setting, log);
